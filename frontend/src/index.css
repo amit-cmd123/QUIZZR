@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0B1020;
+  background-image: linear-gradient(rgba(11, 16, 32, 0.85), rgba(11, 16, 32, 0.96)), url('/bg-halftone.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #F8FAFC;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism Styles */
+.glass-card {
+  background: rgba(17, 24, 37, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glass-card-glow-blue {
+  background: rgba(17, 24, 37, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.1), 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.glass-card-glow-purple {
+  background: rgba(17, 24, 37, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.1), 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.glass-card-glow-pink {
+  background: rgba(17, 24, 37, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(236, 72, 153, 0.2);
+  box-shadow: 0 0 25px rgba(236, 72, 153, 0.1), 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.glass-card-glow-cyan {
+  background: rgba(17, 24, 37, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.1), 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Neon Text Glows */
+.glow-text-blue {
+  text-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
+}
+
+.glow-text-pink {
+  text-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
+}
+
+.glow-text-cyan {
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(11, 16, 32, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(31, 41, 55, 0.8);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(37, 99, 235, 0.6);
+}
+
+/* Transitions */
+.transition-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
